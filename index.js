@@ -1,4 +1,9 @@
 
+//i Have completed BlackJackGame
+//and i used three functions,objects,arrays,
+//return inside of Functions,DOM,TextContent,
+// Math objects and some Array Methods
+
 let cards = [];
 let hasBlackJack = false;
 let isAlive = true;
@@ -9,19 +14,19 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 let player = {
-  name:"Tim",
-  chips : 150
+    name: "Tim",
+    chips: 150
 }
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ":" + "$"+ player.chips
+playerEl.textContent = player.name + ":" + "$" + player.chips
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
     if (randomNumber > 10) {
-        return 10;
+        return 10
     } else if (randomNumber === 11) {
-        return 11;
+        return 11
     } else {
-        return randomNumber;
+        return randomNumber
     }
 }
 
